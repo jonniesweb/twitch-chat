@@ -11,7 +11,7 @@ module Twitch
       def initialize(options = {}, &blk)
         options.symbolize_keys!
         options = {
-          host: 'irc.twitch.tv',
+          host: 'irc.chat.twitch.tv',
           port: '6667',
           output: STDOUT
         }.merge!(options)
