@@ -1,4 +1,4 @@
-require 'eventmachine'
+# require 'eventmachine'
 require 'logger'
 require 'active_support/core_ext/hash/keys'
 require "twitch/chat/version"
