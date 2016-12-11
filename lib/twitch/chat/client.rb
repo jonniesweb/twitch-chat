@@ -176,7 +176,7 @@ module Twitch
       def authenticate
         send_data "PASS #{password}"
         send_data "NICK #{nickname}"
-        send_data "TWITCHCLIENT 3"
+#         send_data "TWITCHCLIENT 3"
       end
     end
   end
