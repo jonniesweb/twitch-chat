@@ -76,7 +76,7 @@ module Twitch
 
       def parse_type
         case @command
-          when 'PRIVMSG', 'WHISPER'
+          when 'PRIVMSG'
             if @user == 'jtv'
               case @message
                 when /This room is now in slow mode/ then :slow_mode
