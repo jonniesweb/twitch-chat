@@ -93,6 +93,7 @@ module Twitch
             else
               :message
             end
+          when 'WHISPER' then :message
           when 'MODE' then :mode
           when 'PING' then :ping
           when 'NOTICE'
