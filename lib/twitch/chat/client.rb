@@ -11,7 +11,7 @@ module Twitch
       def initialize(options = {}, &blk)
         options.symbolize_keys!
         options = {
-          host: 'irc.twitch.tv',
+          host: 'irc.chat.twitch.tv',
           port: '6667',
           output: STDOUT
         }.merge!(options)
@@ -176,7 +176,7 @@ module Twitch
       def authenticate
         send_data "PASS #{password}"
         send_data "NICK #{nickname}"
-        send_data "TWITCHCLIENT 3"
+#         send_data "TWITCHCLIENT 3"
       end
     end
   end
